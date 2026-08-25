@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="scoreboard">
+      <div class="score-box">
+        <span class="score-label">You</span>
+        <span class="score-value" id="player-score">0</span>
+      </div>
+      <div class="score-box draws">
+        <span class="score-label">Draws</span>
+        <span class="score-value" id="draw-score">0</span>
+      </div>
+      <div class="score-box">
+        <span class="score-label">Computer</span>
+        <span class="score-value" id="computer-score">0</span>
+      </div>
+    </div>
+
+    <!-- Choices Container -->
+    <div class="choices" id="choices-container">
+      <button class="choice-btn" data-choice="rock">✊ Rock</button>
+      <button class="choice-btn" data-choice="paper">✋ Paper</button>
+      <button class="choice-btn" data-choice="scissors">✌️ Scissors</button>
+    </div>
+
+    <!-- Game Over Container (Initially Hidden) -->
+    <div class="game-over-container" id="game-over-container">
+      <h2 id="game-over-message">You won the game!</h2>
+      <button class="play-again-btn" id="play-again-btn">Play Again</button>
+    </div>
+
+    <div class="result-area">
+      <div class="picks">
+        <div class="pick">
+          <span class="pick-label">You picked</span>
+          <span class="pick-value" id="player-pick">❓</span>
+        </div>
+        <div class="vs">VS</div>
+        <div class="pick">
+          <span class="pick-label">Computer picked</span>
+          <span class="pick-value" id="computer-pick">❓</span>
+        </div>
+      </div>
+      <p class="result-message" id="result-message">Make your choice!</p>
+    </div>
+
+    <button class="reset-btn" id="reset-btn">Reset Score</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
